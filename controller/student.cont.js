@@ -1,4 +1,4 @@
-import Student from "../model/student.model";
+import Student from "../model/student.model.js";
 import multer from "multer";
 
 const storage = multer.diskStorage({
