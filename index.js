@@ -4,11 +4,16 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import studentRouter from './router/student.router.mjs';
 import dotenv from "dotenv";
+import path from 'path';
+import { fileURLToPath } from 'url'
 
 let app = express()
 dotenv.config();
 let PORT= process.env.PORT || 6020
-app.use(express.static(__dirname))
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+// app.use(express.static(__dirname))
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
