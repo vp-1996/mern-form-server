@@ -52,7 +52,7 @@ export const addStudent=(req,res)=>{
                     success:true,
                     data:studentData,
                     message:'Succesfully Data inserted',
-                    path: 'http://localhost:4020/uploads'
+                    path: 'https://mern-form-0rhv.onrender.com/uploads'
                  })
               }
 
