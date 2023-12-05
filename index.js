@@ -32,7 +32,7 @@ app.listen(PORT, () =>{
     console.log(`App listening on port ${PORT}`)
 }) 
 
-mongoose.connect('mongodb:///0.0.0.0.1:27017/olio-db')
+mongoose.connect(process.env.MONGO_URL)
 
 .then(()=>{
     console.log('DB sucessfully connected');
