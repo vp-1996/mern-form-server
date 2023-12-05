@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json()) 
 
 var corsOptions = { 
-    origin: 'https://brilliant-travesseiro-ee174f.netlify.app/',
+    origin: 'https://brilliant-travesseiro-ee174f.netlify.app',
     optionsSuccessStatus: 200, // For legacy browser support
     methods: "GET, PUT, PATCH,  POST, DELETE"
 }
